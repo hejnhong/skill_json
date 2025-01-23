@@ -31,10 +31,39 @@ json = (ilJson_createObj)
 ```lisp
 str = (ilJson_toString json)
 ```
-
+the str will be like this:
+```
+"{\"testTrue\": true, \"testSymbol\": falsefalsetrue, \"floatNum\": -4.3, \"teststring\": \"sssshello\", \"negativeNum\": -1, \"positiveNum\": 2, \"testStringList\": [\"skill\", \"sssss\", \"skill2\", \"fajdfjfh\"], \"testList\": [1, 2, 3, a, b, \"skill\"], \"testFalse\": false}"
+```
 ## 5. print the json object to file
 ```lisp
-(ilJson_savePretty "json_test.txt")
+(ilJson_savePretty json "json_test.txt")
+```
+the contents of json_test.txt will be like this:
+```
+{
+    "testTrue": true,
+    "testSymbol": falsefalsetrue,
+    "floatNum": -4.3,
+    "teststring": "sssshello",
+    "negativeNum": -1,
+    "positiveNum": 2,
+    "testStringList": [
+        "skill",
+        "sssss",
+        "skill2",
+        "fajdfjfh"
+    ],
+    "testList": [
+        1,
+        2,
+        3,
+        a,
+        b,
+        "skill"
+    ],
+    "testFalse": false
+}
 ```
 
 ## 6. parse a json string
