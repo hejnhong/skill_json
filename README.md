@@ -9,22 +9,22 @@ This lightweight JSON library for the Skill language employs an association tabl
 
 ## 2. create a json object
 ```lisp
-json = (ilJSON_CreateObj)
+json = (ilJson_createObj)
 ```
 
 ## 3. add key value pairs
 ```lisp
-(ilJSON_SetValue json 'negativeNum -1)
-(ilJSON_SetValue json 'positiveNum 2)
-(ilJSON_SetValue json 'floatNum 2.54)
-(ilJSON_SetValue json 'floatNum -4.3)
+(ilJson_addValue json 'negativeNum -1)
+(ilJson_addValue json 'positiveNum 2)
+(ilJson_addValue json 'floatNum 2.54)
+(ilJson_addValue json 'floatNum -4.3)
 
-(ilJSON_SetValue json 'testTrue t)
-(ilJSON_SetValue json 'testFalse nil)
-(ilJSON_SetValue json 'teststring "sssshello")
-(ilJSON_SetValue json 'testSymbol 'falsefalsetrue)
-(ilJSON_SetValue json 'testList '(1 2 3 a b "skill"))
-(ilJSON_SetValue json 'testStringList '("skill" "sssss" "skill2" "fajdfjfh"))
+(ilJson_addValue json 'testTrue t)
+(ilJson_addValue json 'testFalse nil)
+(ilJson_addValue json 'teststring "sssshello")
+(ilJson_addValue json 'testSymbol 'falsefalsetrue)
+(ilJson_addValue json 'testList '(1 2 3 a b "skill"))
+(ilJson_addValue json 'testStringList '("skill" "sssss" "skill2" "fajdfjfh"))
 ```
 
 ## 4. print the json object to string
